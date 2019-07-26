@@ -177,6 +177,9 @@ export default class PagerAndroid<T: *> extends React.Component<Props<T>> {
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
+    // avoid white flash when using two nested tab navigators while keeping swipeEnabled and animationEnabled
+    // https://github.com/react-navigation/react-navigation/issues/662#issuecomment-290938479
+    backgroundColor: '#040b17',
   },
 
   page: {
