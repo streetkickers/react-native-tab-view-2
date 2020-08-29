@@ -1,7 +1,11 @@
 /* @flow */
 
 import * as React from 'react';
-import { View, ViewPagerAndroid, StyleSheet, I18nManager } from 'react-native';
+import { View, StyleSheet, I18nManager } from 'react-native';
+// ViewPagerAndroid has been removed from React Native. It can now be installed and imported from
+// '@react-native-community/viewpager' instead of 'react-native'.
+// See https://github.com/react-native-community/react-native-viewpage
+import ViewPagerAndroid from '@react-native-community/viewpager'
 import { PagerRendererPropType } from './PropTypes';
 import type { PagerRendererProps } from './TypeDefinitions';
 
